@@ -294,17 +294,6 @@ class _StudentHomepageState extends State<StudentHomepage> {
                 : Text(
                     '${firstName.characters.characterAt(0)}${lastName.characters.characterAt(0)}'),
           ),
-          PopupMenuButton(
-            itemBuilder: (context) => [
-              PopupMenuItem(
-                  onTap: logout,
-                  value: 'logout',
-                  child: const ListTile(
-                    leading: Icon(Icons.logout),
-                    title: Text('Logout'),
-                  ))
-            ],
-          )
         ],
       ),
       drawer: Drawer(
